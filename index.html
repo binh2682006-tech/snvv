@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 
 <head>
@@ -1028,7 +1028,9 @@
 
     /* ======================== TỐI ƯU GIAO DIỆN ĐIỆN THOẠI (MOBILE RESPONSIVE) ======================== */
     @media (max-width: 768px) {
-      html, body {
+
+      html,
+      body {
         height: 100dvh;
         touch-action: manipulation;
       }
@@ -1295,7 +1297,7 @@
       autoAdvanceScreen1Ms: 7500, // Tự chuyển sang Màn 2 sau 7.5 giây (hoặc chạm màn hình)
       letterTitle: "Happy birthday,",
       letterParagraphs: [
-        "Chúc mừng sinh nhật Phương Trang! Hôm nay là một ngày thật đặc biệt, ngày mà một cô gái rạng rỡ, đáng yêu và mang nhiều năng lượng tích cực đã đến với thế giới này.",
+        "Chúc mừng sinh nhật Phương Trang! Ngày mà một cô gái rạng rỡ, đáng yêu và mang nhiều năng lượng tích cực đã đến với thế giới này.",
         "Mong rằng tuổi mới sẽ mang đến cho Trang thật nhiều niềm vui, sức khỏe, may mắn và những trải nghiệm tuyệt vời. Dù ở bất cứ hành trình nào, chúc bạn luôn giữ được nụ cười tươi tắn, trái tim ấm áp và đạt được mọi ước mơ mà mình ấp ủ.",
         "Hãy luôn yêu thương bản thân, tận hưởng từng khoảnh khắc ngọt ngào bên gia đình và những người thân yêu nhé!"
       ],
@@ -1536,7 +1538,7 @@
         <div class="intro-subtitle" id="intro-recipient-name">✨ Phương Trang ✨</div>
       </div>
 
-      <div class="intro-hint">Chạm vào màn hình để mở sổ kỷ niệm ✨</div>
+      <div class="intro-hint">Chạm vào màng hình ✨</div>
     </div>
   </section>
 
@@ -1549,9 +1551,6 @@
       <span>Quay lại</span>
     </button>
     <div class="flipbook-stage">
-      <div class="flipbook-instruction" id="flipbook-status">
-        Chạm vào trang bên phải để lật trang 📖
-      </div>
 
       <div class="book-viewport">
         <div class="book" id="flipbook">
@@ -1577,7 +1576,6 @@
                 <rect x="109" y="56" width="6" height="18" rx="2" fill="#fff" stroke="#ff5c8d" stroke-width="1.2" />
                 <path d="M112 45 C108 50 109 55 112 56 C115 55 116 50 112 45 Z" fill="#ffb703" />
               </svg>
-              <div class="cover-tap-badge">Chạm để mở sổ →</div>
             </div>
             <div class="sheet-face sheet-back">
               <div class="photo-frame">
@@ -1645,7 +1643,6 @@
 
       <!-- Nút hình viên thuốc (pill button) hiện lên khi lật hết đến bìa sau -->
       <button class="pill-btn" id="btn-to-screen3">
-        <span>Mở thư chúc mừng</span>
         <span>💌</span>
       </button>
     </div>
@@ -1695,7 +1692,7 @@
         </div>
       </div>
 
-      <div class="seal-hint" id="seal-hint">Chạm vào trái tim trên phong bì để mở thư 💗</div>
+      <div class="seal-hint" id="seal-hint">Mở thư 💗</div>
 
       <!-- Trạng thái 2: Thư mở toàn phần -->
       <div class="full-letter-modal" id="full-letter-modal">
