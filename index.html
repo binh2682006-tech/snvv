@@ -1643,6 +1643,7 @@
 
       <!-- Nút hình viên thuốc (pill button) hiện lên khi lật hết đến bìa sau -->
       <button class="pill-btn" id="btn-to-screen3">
+        <span>Mở thư</span>
         <span>💌</span>
       </button>
     </div>
@@ -1873,15 +1874,15 @@
     function updateBookTransform() {
       if (currentSheetIndex === 0) {
         flipbook.classList.remove('opened', 'closed-end');
-        flipbookStatus.textContent = 'Chạm vào bìa sách để mở 📖';
+        if (flipbookStatus) flipbookStatus.textContent = 'Chạm vào bìa sách để mở 📖';
       } else if (currentSheetIndex < totalSheets) {
         flipbook.classList.add('opened');
         flipbook.classList.remove('closed-end');
-        flipbookStatus.textContent = `Trang ${currentSheetIndex} / ${totalSheets - 1} • Chạm vào trang để lật tiếp`;
+        if (flipbookStatus) flipbookStatus.textContent = `Trang ${currentSheetIndex} / ${totalSheets - 1} • Chạm vào trang để lật tiếp`;
       } else {
         flipbook.classList.remove('opened');
         flipbook.classList.add('closed-end');
-        flipbookStatus.textContent = 'Đã xem hết sổ ảnh kỷ niệm ✨ (Chạm bìa sau nếu muốn xem lại)';
+        if (flipbookStatus) flipbookStatus.textContent = 'Đã xem hết sổ ảnh kỷ niệm ✨ (Chạm bìa sau nếu muốn xem lại)';
         btnToScreen3.classList.add('visible');
       }
     }
